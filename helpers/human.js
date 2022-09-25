@@ -21,4 +21,19 @@ function toHumanTime(seconds = 0) {
 	);
 }
 
-export { toHumanTime };
+/**
+ * Converts bytes to human readable unit.
+ * Thank you Amir from StackOverflow.
+ * @example
+ * toHumanSize(48000)    // 46.88 kB
+ * toHumanSize(8048000)  // 7.68 MB
+ * @param {number} bytes
+ * @return {string}
+ */
+function toHumanSize(bytes = 0) {
+	const suffixes = ['B', 'kB', 'MB', 'GB', 'TB'];
+	const i = Math.floor(Math.log(bytes) / Math.log(1024));
+	return `${(bytes / Math.pow(1024, i)).toFixed(2)} ${suffixes[i]}`;
+}
+
+export { toHumanTime, toHumanSize };
