@@ -173,8 +173,7 @@ tube "http://www.youtube.com/watch?v=AwRAfxBub9M" -e mp3
 - Supports all available video formats and qualities.
 - Playlists organized to folders by their names.
 
-> wanna to make your own package!! <br/>
->see [`js-girlfriend`](https://github.com/Mohammed-Taysser/js-girlfriend) package for more details
+> wanna to make your own package!! see [`how-to-make-your-own-npm-package`](https://dev.to/mohammedtaysser/how-to-make-your-own-npm-package-4dm2) for more details
 
 ## Used Package 🧰
 
